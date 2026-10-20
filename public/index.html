@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>アプリ一覧</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      color: #fff;
+    }
+    h1 { font-size: 2rem; margin-bottom: 10px; color: #f5c518; letter-spacing: 3px; }
+    p  { color: #aaa; margin-bottom: 40px; }
+    .cards { display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; }
+    .card {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 18px;
+      padding: 32px 36px;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      width: 220px;
+      transition: transform 0.2s, background 0.2s;
+    }
+    .card:hover { transform: translateY(-6px); background: rgba(255,255,255,0.13); }
+    .card .icon { font-size: 3.5rem; display: block; margin-bottom: 14px; }
+    .card .name { font-size: 1.1rem; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <h1>🎮 アプリ一覧</h1>
+  <p>遊びたいアプリを選んでください</p>
+  <div class="cards">
+    <a class="card" href="./car-race.html">
+      <span class="icon">🏎</span>
+      <span class="name">カーレース</span>
+    </a>
+    <a class="card" href="./fish-quiz.html">
+      <span class="icon">🐟</span>
+      <span class="name">魚タイプ診断</span>
+    </a>
+  </div>
+</body>
+</html>
